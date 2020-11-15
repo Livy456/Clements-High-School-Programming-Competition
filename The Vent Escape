@@ -1,0 +1,22 @@
+num = input()
+vents = int(num)
+count = 0
+
+for y in range(vents):
+    message = input()
+    msg = message.lower()
+    sub = msg.find("crewmate")
+
+    if msg.find("crewmate"):
+        for ele in message[sub:sub+8]:
+            if ele.isupper():
+                print("Not Safe")
+                break
+                
+            if ele.islower():
+                count+=1
+        if count == 8:
+            print("Safe")
+        
+    elif sub < 0:
+        print("Not Safe")
