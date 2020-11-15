@@ -1,0 +1,23 @@
+import math
+
+x = input()
+x = x.split(" ")
+x = [int(y) for y in x]
+p1 = [x[0], x[1]]
+p2 = [x[2], x[3]]
+start = [x[4], x[5]]
+finalDis = 0
+d3 = 0
+
+d1 = (abs(p1[0] - start[0])) + (abs(p1[1] - start[1]))
+d2 = (abs(p2[0] - start[0])) + (abs(p2[1] - start[1]))
+
+if d1 < d2:
+    d3 = (abs(p2[0] - p1[0])) + (abs(p2[1] - p1[1]))
+    finalDis = d1+ d3
+    
+elif d2 < d1:
+    d3 = (abs(p1[0] - p2[0])) + (abs(p1[1] - p2[1])) 
+    finalDis = d2 + d3
+    
+print(str(finalDis))
