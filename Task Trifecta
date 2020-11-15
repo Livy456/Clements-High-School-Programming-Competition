@@ -1,0 +1,15 @@
+num = input()
+rounds = int (num)
+
+for n in range(rounds):
+    game = input()
+    game = game.split(" ")
+    game = [int (y) for y in game]
+    distance = abs(game[0] - 0)
+    distance += abs(game[1] - game[0])
+    distance += abs(game[2] - game[1])
+    distance += abs(0 - game[2])
+    
+    print(str(distance))
+    game = []
+    distance = 0
