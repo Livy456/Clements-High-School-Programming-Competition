@@ -1,0 +1,10 @@
+x = input()
+task = int (x)
+total = task
+task-=1
+
+while task > 0:
+    total*=task
+    task-=1
+    
+print(str(total))
