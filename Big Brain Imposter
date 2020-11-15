@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int b;
+        Scanner in = new Scanner(System.in);
+        int total;
+        total = 0;
+        b = in.nextInt();
+        
+        for(int i=b; i > 0; i--)
+        {
+            total +=i;
+        }
+        
+        System.out.println(""+total);
+    
+    }
+}
