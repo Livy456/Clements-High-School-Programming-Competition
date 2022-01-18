@@ -8,3 +8,4 @@ while task > 0:
     task-=1
     
 print(str(total))
+vim: syntax=python
