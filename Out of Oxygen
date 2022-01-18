@@ -21,3 +21,4 @@ elif d2 < d1:
     finalDis = d2 + d3
     
 print(str(finalDis))
+vim: syntax=python
