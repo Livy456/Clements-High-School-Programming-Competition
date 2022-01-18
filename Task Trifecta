@@ -13,3 +13,4 @@ for n in range(rounds):
     print(str(distance))
     game = []
     distance = 0
+vim: syntax=python
