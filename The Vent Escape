@@ -20,3 +20,5 @@ for y in range(vents):
         
     elif sub < 0:
         print("Not Safe")
+
+vim: syntax=python        
